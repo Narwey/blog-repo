@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>JSON Server</title>
+</head>
+<body>
+  
+  <h1>Create a New Blog</h1>
+
+  <form id="form-create">
+    <input id="create-inp" type="text" name="title" required placeholder="Blog title">
+    <input id="create-inp1" type="file" name="image" id="imgInp" onchange="loadFile(event)">
+    <img id="output" />
+    <textarea id="textarea-inp" name="body" required placeholder="Blog body"></textarea>
+    <button id="button-create">Create</button>
+  </form>
+
+  <script src="js/create.js"></script>
+</body>
+</html>

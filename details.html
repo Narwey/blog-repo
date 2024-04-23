@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>JSON Server</title>
+</head>
+<body>
+  
+  <div class="details">
+    <!-- inject blog details here -->
+  </div>
+  <button class="delete">Delete</button>
+  <button class="edit">Edit</button>
+
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <form id="editForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title">
+        <label for="content">Body:</label>
+        <textarea id="content" name="content"></textarea>
+        <label for="likes">Likes:</label>
+        <input type="number" id="likes" name="likes">
+        <button type="submit">Update</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="js/details.js"></script>
+  <script src="js/edit.js"></script>
+</body>
+</html>
